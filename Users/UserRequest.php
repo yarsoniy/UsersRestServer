@@ -17,7 +17,7 @@ class UserRequest extends ResourceRequest {
         'list',
         'add',
         'edit',
-        'remove'
+        'delete'
     );
 
     function __construct($method, $operation, $id) {
@@ -42,7 +42,7 @@ class UserRequest extends ResourceRequest {
             case 'edit':
                 $handler = new UserEditHandler($this);
                 break;
-            case 'remove':
+            case 'delete':
                 $handler = new UserRemoveHandler($this);
                 break;
             default:
