@@ -2,6 +2,7 @@
 Модуль керування користувачами(RESTfull service)
 
 Приклади запитів: 
+
 GET /user/list
 
 GET /user/get/<id>
